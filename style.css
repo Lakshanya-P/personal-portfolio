@@ -830,6 +830,12 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-variation-settings: "SOFT" 
 .doc-icon { border-radius: 16px; background: rgba(244,177,138,.1); border-color: rgba(244,177,138,.28); }
 .doc-kind { font-size: 13px; font-weight: 700; text-transform: none; letter-spacing: .02em; }
 .doc h3 { font-size: 21px; font-weight: 500; }
+.doc { overflow: hidden; align-items: start; }
+.doc-img { grid-column: 1 / -1; aspect-ratio: 16 / 8; margin: -24px -24px 2px; border-radius: 0; }
+.doc-img img { transition: transform .6s var(--ease); }
+.pos-low { object-position: center 70%; }
+.card-body a.card-meta { color: var(--cyan); width: max-content; }
+.card-body a.card-meta:hover { text-decoration: underline; }
 
 /* Leadership: each card gets its own soft color */
 .impact-card::after { background: radial-gradient(circle, color-mix(in srgb, var(--c, var(--cyan)) 22%, transparent), transparent 70%); }
