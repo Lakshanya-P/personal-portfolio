@@ -8,11 +8,11 @@
   <meta property="og:title" content="Lakshanya Prabhu · Portfolio" />
   <meta property="og:description" content="I build technology that makes information and opportunity accessible." />
   <meta property="og:image" content="assets/img/og-cover.jpg" />
-  <meta name="theme-color" content="#05060f" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='7' fill='%236ee7ff'/><ellipse cx='16' cy='16' rx='14' ry='4.5' fill='none' stroke='%23b69cff' stroke-width='2' transform='rotate(-20 16 16)'/></svg>" />
+  <meta name="theme-color" content="#14121f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='7' fill='%23f4b18a'/><ellipse cx='16' cy='16' rx='14' ry='4.5' fill='none' stroke='%23c3b1f0' stroke-width='2' transform='rotate(-20 16 16)'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,100;1,9..144,400..700,100&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -40,12 +40,13 @@
   <header class="nav" id="nav">
     <a href="#about" class="brand" aria-label="Back to top">
       <span class="brand-planet"></span>
-      <span class="brand-name">Lakshanya Prabhu</span>
+      <span class="brand-name">Lakshanya <span>Prabhu</span></span>
     </a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
     <nav id="nav-links" class="nav-links">
+      <a href="#journey">Journey</a>
       <a href="#projects">Projects</a>
       <a href="#more">More</a>
       <a href="#writing">Writing</a>
@@ -60,8 +61,11 @@
     <section id="about" class="hero">
       <div class="hero-inner">
         <div class="hero-text">
-          <p class="eyebrow mono">// transmission incoming</p>
-          <h1>Hi, I'm <span class="grad">Lakshanya&nbsp;Prabhu</span>.</h1>
+          <p class="hello">
+            <span class="tamil tip" tabindex="0" data-tip="“vanakkam”, hello in Tamil">வணக்கம்!</span>
+            <span class="wave" aria-hidden="true">👋</span>
+          </p>
+          <h1>Hi, I'm <em class="name">Lakshanya</em>.</h1>
           <p class="tagline">I build technology that makes information and opportunity accessible.</p>
           <p class="hero-sub">
             Senior at McKinney North High School in McKinney, Texas (Class of 2027). I build apps, run labs,
@@ -96,31 +100,69 @@
             <div class="frame avatar" data-file="assets/img/profile.jpg" data-initials="LP">
               <img src="assets/img/profile.jpg" alt="Lakshanya Prabhu" width="400" height="400" />
             </div>
+            <span class="note photo-note" aria-hidden="true">that's me!<svg class="scribble-arrow" viewBox="0 0 60 40" aria-hidden="true"><path d="M3 6 C 22 0, 42 10, 50 30"/><path d="M41 27 L 50 31 L 52 21"/></svg></span>
           </div>
+          <aside class="sticky-note" aria-label="What I'm up to right now">
+            <p class="sticky-title">currently…</p>
+            <ul>
+              <li>taking AP Physics C (both of them!)</li>
+              <li>leading a 5-person team in the Wharton investment competition</li>
+              <li>preparing for Distinguished Young Woman of Texas</li>
+              <li>adding exportable reports to Orbit</li>
+            </ul>
+          </aside>
         </div>
       </div>
       <a href="#projects" class="scroll-cue" aria-label="Scroll to projects">
-        <span class="mono">launch</span>
+        <span>there's more down here</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
       </a>
+    </section>
+
+    <!-- ================= MY SKY SO FAR (journey constellation) ================= -->
+    <section id="journey" class="section journey">
+      <div class="section-head reveal">
+        <p class="note">tap a star ✦</p>
+        <h2>My sky so far</h2>
+        <p class="section-sub">A few moments that led to everything below.</p>
+      </div>
+      <div class="sky reveal">
+        <svg class="sky-lines" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true">
+          <polyline points="6,36 18,20 31,32 44,13 57,26 70,15 82,30" />
+          <polyline class="dashed" points="82,30 94,11" />
+        </svg>
+        <button class="sky-star" style="--x:6;--y:72" data-when="Aug 2023" data-text="Freshman year. I joined TSA and Student Council, co-founded my school’s first Biotechnology Club, and started teaching Tamil at Avvai Tamil School." aria-label="Aug 2023"><span class="sky-label">Aug 2023</span></button>
+        <button class="sky-star" style="--x:18;--y:40" data-when="Summer 2024" data-text="Won 1st place at the INFITT International Hackathon with Meyinigar Poonga, a Tamil-learning “virtual park” for kids." aria-label="Summer 2024"><span class="sky-label">Summer 2024</span></button>
+        <button class="sky-star" style="--x:31;--y:64" data-when="April 2025" data-text="Led my school’s first team to win 1st in Texas at TSA (Biotechnology Design), and its first team to compete at nationals." aria-label="April 2025"><span class="sky-label">April 2025</span></button>
+        <button class="sky-star" style="--x:44;--y:26" data-when="Summer 2025" data-text="Built Kubera on an iPad with no Swift experience, then rebuilt it in Xcode. Also a Kode With Klossy Data Science Scholar." aria-label="Summer 2025"><span class="sky-label">Summer 2025</span></button>
+        <button class="sky-star" style="--x:57;--y:52" data-when="2025" data-text="Started Clarity, an accessibility app that keeps everything on the phone." aria-label="2025"><span class="sky-label">2025</span></button>
+        <button class="sky-star" style="--x:70;--y:30" data-when="2026" data-text="Elected Senior Class Secretary, built Orbit, became TSA Chapter President, and won Distinguished Young Woman of McKinney." aria-label="2026"><span class="sky-label">2026</span></button>
+        <button class="sky-star" style="--x:82;--y:60" data-when="Sept 2026" data-text="Named a National Merit Commended Scholar." aria-label="Sept 2026"><span class="sky-label">Sept 2026</span></button>
+        <button class="sky-star next" style="--x:94;--y:22" data-when="Next" data-text="The next star: studying electrical &amp; computer engineering and business." aria-label="Next"><span class="sky-label">Next</span></button>
+      </div>
+      <div class="sky-caption reveal" aria-live="polite">
+        <span class="sky-when"></span>
+        <p class="sky-text"></p>
+      </div>
     </section>
 
     <!-- ================= 2. FEATURED PROJECTS ================= -->
     <section id="projects" class="section">
       <div class="section-head reveal">
-        <p class="eyebrow mono">02 / featured missions</p>
+        <p class="note">things I’ve built &amp; loved</p>
         <h2>Featured Projects</h2>
         <p class="section-sub">Each one covers the problem, what I built, my role, the stack, the result, and what's next.</p>
       </div>
 
       <!-- ---------- CLARITY ---------- -->
-      <article class="case reveal" id="clarity" style="--accent:#7c9cff; --accent-2:#b69cff">
+      <article class="case reveal" id="clarity" style="--accent:#c3b1f0; --accent-2:#a9c4ef">
         <header class="case-head">
-          <span class="mission mono">Mission 01 · 2025 – present</span>
+          <span class="mission">Mission 01 · 2025 – present</span>
           <h3>Clarity</h3>
           <p class="case-tag">A cognitive accessibility app for iOS that changes how dense information is presented to fit each person.</p>
           <div class="case-links">
             <a href="https://youtu.be/xhVOcf4qCKo" class="link-pill" target="_blank" rel="noopener">Watch pitch on YouTube ↗</a>
+            <button class="clarity-toggle" aria-pressed="false">✨ Read this the Clarity way</button>
           </div>
         </header>
 
@@ -132,7 +174,7 @@
               </button>
             </div>
             <div class="chapters" role="group" aria-label="Jump to a part of the video">
-              <span class="mono">6-min pitch · jump to</span>
+              <span class="small">6-min pitch · jump to</span>
               <button class="chapter" data-target="#clarity .video" data-start="75">▶ App demo · 1:15</button>
               <button class="chapter" data-target="#clarity .video" data-start="173">▶ Architecture · 2:53</button>
             </div>
@@ -141,7 +183,7 @@
                  <div class="frame zoomable" data-file="assets/img/clarity-architecture.png"><img src="assets/img/clarity-architecture.png" alt="..."></div> -->
             <figure class="arch" aria-label="Clarity architecture: all processing stays on the phone">
               <div class="arch-device">
-                <span class="arch-lock mono">🔒 everything runs on the phone</span>
+                <span class="arch-lock">🔒 everything runs on the phone</span>
                 <p class="arch-title">The Adaptive Engine</p>
                 <ol class="arch-steps">
                   <li><span>📄</span>Information Input<small>camera OCR · text</small></li>
@@ -152,14 +194,14 @@
                   <li><span>📱</span>Personalized Experience<small>SwiftUI · speech</small></li>
                 </ol>
               </div>
-              <div class="arch-next mono">next → dedicated hardware companion device</div>
-              <figcaption class="mono">How Clarity makes decisions (from the pitch, 2:53)</figcaption>
+              <div class="arch-next">next → dedicated hardware companion device</div>
+              <figcaption class="small">How Clarity makes decisions (from the pitch, 2:53)</figcaption>
             </figure>
           </div>
 
           <ol class="log">
-            <li><h4>Problem</h4><p>Dense information like articles, forms, and instructions comes in one format for everyone. For people who process information differently, that format can stop them from getting what they need.</p></li>
-            <li><h4>What I built</h4><p>An iOS app that adapts how dense information is presented to each user's cognitive needs. It combines on-device OCR, speech, and AI, so nothing leaves the phone. That keeps it private.</p></li>
+            <li><h4>Problem</h4><p>Dense information like articles, forms, and instructions comes in <b class="key">one format for everyone</b>. For people who process information differently, that format can <b class="key">stop them from getting what they need</b>.</p></li>
+            <li><h4>What I built</h4><p>An iOS app that <b class="key">adapts how dense information is presented</b> to each user's cognitive needs. It combines on-device OCR, speech, and AI, so <b class="key">nothing leaves the phone</b>. That keeps it private.</p></li>
             <li><h4>My role</h4><p>Founder &amp; solo developer, 8 hours a week. I did the design, the code, and the pitch.</p></li>
             <li><h4>Tech</h4>
               <ul class="chips"><li>Swift</li><li>SwiftUI</li><li>On-device OCR</li><li>Speech</li><li>On-device AI</li><li>Xcode</li></ul>
@@ -169,16 +211,16 @@
               <p class="stat"><span data-count="400">400</span>+</p>
               <p>entrants in the Kode With Klossy × Apple App Challenge, where I entered Clarity.</p>
             </li>
-            <li><h4>Learned / next</h4><p>Getting Clarity to work proved it was possible, not that anyone would use it. Pitching it taught me the hardest questions were who pays and how it reaches people who struggle with technology, which is why I’m designing a dedicated hardware device next.</p></li>
+            <li><h4>Learned / next</h4><p>Getting Clarity to work proved it was <b class="key">possible, not that anyone would use it</b>. Pitching it taught me the hardest questions were who pays and how it reaches people who struggle with technology, which is why I’m designing a dedicated hardware device next.</p></li>
           </ol>
         </div>
       </article>
 
       <!-- ---------- ORBIT ---------- -->
-      <article class="case reveal" id="orbit" style="--accent:#6ee7ff; --accent-2:#5eead4">
+      <article class="case reveal" id="orbit" style="--accent:#a9d6e5; --accent-2:#a8d5a2">
         <header class="case-head">
-          <span class="mission mono">Mission 02 · June 2026 – present</span>
-          <h3>Orbit</h3>
+          <span class="mission">Mission 02 · June 2026 – present</span>
+          <h3 class="orbit-title">Orbit<span class="tiny-planet" aria-hidden="true"></span></h3>
           <p class="case-tag">A volunteer-hour tracking platform for my school's Student Council, replacing hand-kept records.</p>
           <div class="case-links">
             <a href="https://github.com/Lakshanya-P/orbit" class="link-pill" target="_blank" rel="noopener">GitHub ↗</a>
@@ -193,7 +235,7 @@
               <div class="frame zoomable" data-file="assets/img/orbit-log.webp"><img src="assets/img/orbit-log.webp" alt="Orbit Log Volunteer Hours form with category, event, date, hours, organization and verifying contact" loading="lazy" width="1600" height="861" /></div>
               <div class="frame zoomable" data-file="assets/img/orbit-admin.webp"><img src="assets/img/orbit-admin.webp" alt="Orbit admin student roster filtered by grade, with student names blurred for privacy" loading="lazy" width="1600" height="832" /></div>
             </div>
-            <p class="gallery-hint mono">← swipe · tap to enlarge →</p>
+            <p class="gallery-hint">swipe for more · tap to enlarge</p>
           </div>
 
           <ol class="log">
@@ -207,6 +249,7 @@
               <h4>Result</h4>
               <p class="stat"><span data-count="100">100</span>+</p>
               <p>students and staff use Orbit to log and manage volunteer hours.</p>
+              <span class="note side-note">real people actually use this! 🥹</span>
             </li>
             <li><h4>Learned / next</h4><p>Real users find edge cases a test plan never does: <span class="todo">[e.g., students logging the same event twice, or teachers needing to approve hours in bulk]</span>. Next, I’m adding exportable reports for counselors.</p></li>
           </ol>
@@ -214,10 +257,10 @@
       </article>
 
       <!-- ---------- KUBERA ---------- -->
-      <article class="case reveal" id="kubera" style="--accent:#5ee08a; --accent-2:#ffd36e">
+      <article class="case reveal" id="kubera" style="--accent:#a8d5a2; --accent-2:#f5d08a">
         <header class="case-head">
-          <span class="mission mono">Mission 03 · Summer 2025</span>
-          <h3><img class="case-icon" src="assets/img/kubera-icon.png" alt="" width="44" height="44" /> Kubera</h3>
+          <span class="mission">Mission 03 · Summer 2025</span>
+          <h3><button class="stripe-btn" aria-label="Tap to earn a Kubera Stripe"><img class="case-icon" src="assets/img/kubera-icon.png" alt="" width="44" height="44" /></button> Kubera <span class="stripe-count" aria-live="polite"></span></h3>
           <p class="case-tag">A financial literacy app that teaches kids how money works, from their first bank account to their first stock.</p>
           <div class="case-links">
             <a href="https://github.com/Lakshanya-P/kubera" class="link-pill" target="_blank" rel="noopener">GitHub ↗</a>
@@ -233,10 +276,10 @@
               <div class="frame zoomable" data-file="assets/img/kubera-transactions.webp"><img src="assets/img/kubera-transactions.webp" alt="Kubera transactions screen with a guide explaining real balance tracking" loading="lazy" width="1600" height="1077" /></div>
               <div class="frame zoomable" data-file="assets/img/kubera-goals.webp"><img src="assets/img/kubera-goals.webp" alt="Kubera savings goals with a progress ring and new goal form" loading="lazy" width="1600" height="1081" /></div>
             </div>
-            <p class="gallery-hint mono">← swipe · tap to enlarge →</p>
+            <p class="gallery-hint">swipe for more · tap to enlarge</p>
 
             <div class="story">
-              <p class="story-title mono">From iPad to Xcode</p>
+              <p class="story-title">From iPad to Xcode <span class="note">(no Mac, no problem)</span></p>
               <ol class="story-steps">
                 <li><span class="dot"></span><strong>Started on an iPad</strong><span>Built the first version for Apple's Swift Student Challenge with no prior Swift or app experience.</span></li>
                 <li><span class="dot"></span><strong>No Mac? Rebuilt it by hand</strong><span>Exported the iPad project and published it to GitHub manually, recreating its folder structure file by file.</span></li>
@@ -263,12 +306,16 @@
       </article>
 
       <!-- ---------- MARS ROVER ---------- -->
-      <article class="case reveal" id="rover" style="--accent:#ff8a5c; --accent-2:#ff5f6d">
+      <article class="case reveal" id="rover" style="--accent:#f0a07a; --accent-2:#e8897f">
         <header class="case-head">
-          <span class="mission mono">Mission 04 · 2025 – 2026 · TSA Engineering Design</span>
+          <span class="mission">Mission 04 · 2025 – 2026 · TSA Engineering Design</span>
           <h3>Mars Rover Dust Mitigation</h3>
           <p class="case-tag">A Wimshurst-inspired electrostatic generator to keep Martian dust out of rover wheel axles. Competition theme: "Tools of Scientific Discovery."</p>
         </header>
+        <div class="dust-demo">
+          <canvas aria-hidden="true"></canvas>
+          <p class="note">try it: sweep your cursor (or finger) through the Mars dust ⚡ charge pushes it away</p>
+        </div>
 
         <div class="case-body">
           <div class="case-media">
@@ -277,13 +324,13 @@
             <figure class="diagram rover-diagram">
               <svg viewBox="0 0 520 300" role="img" aria-label="Diagram: a VEX motor drives two counter-rotating disks through a figure-eight belt; aluminum sectors on the disks build up charge that collectors pick up to create an electric field.">
                 <defs>
-                  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker>
+                  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f0a07a"/></marker>
                 </defs>
                 <!-- back disk -->
-                <circle cx="190" cy="140" r="100" fill="none" stroke="#5b5f8f" stroke-width="2" stroke-dasharray="4 4"/>
+                <circle cx="190" cy="140" r="100" fill="none" stroke="#6b6380" stroke-width="2" stroke-dasharray="4 4"/>
                 <!-- front disk -->
-                <circle cx="180" cy="140" r="100" fill="rgba(255,138,92,0.06)" stroke="#ff8a5c" stroke-width="2"/>
-                <g fill="#c9cde8" opacity=".85">
+                <circle cx="180" cy="140" r="100" fill="rgba(240,160,122,0.07)" stroke="#f0a07a" stroke-width="2"/>
+                <g fill="#e9dfd6" opacity=".85">
                   <rect x="176" y="48" width="8" height="26" rx="2"/>
                   <rect x="176" y="206" width="8" height="26" rx="2"/>
                   <rect x="88" y="136" width="26" height="8" rx="2"/>
@@ -293,41 +340,41 @@
                   <rect x="238" y="70" width="8" height="26" rx="2" transform="rotate(45 242 83)"/>
                   <rect x="114" y="184" width="8" height="26" rx="2" transform="rotate(45 118 197)"/>
                 </g>
-                <circle cx="180" cy="140" r="10" fill="#11142c" stroke="#ff8a5c" stroke-width="2"/>
+                <circle cx="180" cy="140" r="10" fill="#201c30" stroke="#f0a07a" stroke-width="2"/>
                 <!-- rotation arrows -->
-                <path d="M110 40 A110 110 0 0 1 250 40" fill="none" stroke="#ff8a5c" stroke-width="1.5" marker-end="url(#arr)"/>
-                <path d="M260 250 A110 110 0 0 1 120 250" fill="none" stroke="#7c80b8" stroke-width="1.5" marker-end="url(#arr)"/>
+                <path d="M110 40 A110 110 0 0 1 250 40" fill="none" stroke="#f0a07a" stroke-width="1.5" marker-end="url(#arr)"/>
+                <path d="M260 250 A110 110 0 0 1 120 250" fill="none" stroke="#8f86a8" stroke-width="1.5" marker-end="url(#arr)"/>
                 <!-- collectors -->
-                <path d="M60 140 h28 M272 140 h30" stroke="#ffd36e" stroke-width="3"/>
-                <circle cx="50" cy="140" r="9" fill="#ffd36e"/>
-                <circle cx="312" cy="140" r="9" fill="#ffd36e"/>
-                <path d="M62 128 q125 -40 238 0" fill="none" stroke="#6ee7ff" stroke-width="1.2" stroke-dasharray="3 5"/>
-                <path d="M62 152 q125 40 238 0" fill="none" stroke="#6ee7ff" stroke-width="1.2" stroke-dasharray="3 5"/>
+                <path d="M60 140 h28 M272 140 h30" stroke="#f5d08a" stroke-width="3"/>
+                <circle cx="50" cy="140" r="9" fill="#f5d08a"/>
+                <circle cx="312" cy="140" r="9" fill="#f5d08a"/>
+                <path d="M62 128 q125 -40 238 0" fill="none" stroke="#a9d6e5" stroke-width="1.2" stroke-dasharray="3 5"/>
+                <path d="M62 152 q125 40 238 0" fill="none" stroke="#a9d6e5" stroke-width="1.2" stroke-dasharray="3 5"/>
                 <!-- belt + motor -->
-                <path d="M180 140 C 300 100, 380 230, 440 200 C 470 185, 470 160, 440 150 C 380 130, 300 190, 190 140" fill="none" stroke="#9aa0c8" stroke-width="1.5"/>
-                <rect x="420" y="150" width="62" height="52" rx="8" fill="#11142c" stroke="#9aa0c8" stroke-width="1.5"/>
-                <circle cx="440" cy="176" r="8" fill="none" stroke="#ff8a5c" stroke-width="2"/>
+                <path d="M180 140 C 300 100, 380 230, 440 200 C 470 185, 470 160, 440 150 C 380 130, 300 190, 190 140" fill="none" stroke="#b3a8b9" stroke-width="1.5"/>
+                <rect x="420" y="150" width="62" height="52" rx="8" fill="#201c30" stroke="#b3a8b9" stroke-width="1.5"/>
+                <circle cx="440" cy="176" r="8" fill="none" stroke="#f0a07a" stroke-width="2"/>
                 <!-- labels -->
-                <g font-family="JetBrains Mono, monospace" font-size="11" fill="#c9cde8">
+                <g font-family="Nunito, sans-serif" font-size="11" fill="#e9dfd6">
                   <text x="330" y="40">counter-rotating disks</text>
-                  <text x="330" y="56" fill="#9aa0c8">(front + back)</text>
-                  <text x="6" y="64" fill="#9aa0c8">aluminum sectors ↘</text>
-                  <text x="20" y="176" fill="#ffd36e">collector</text>
-                  <text x="292" y="176" fill="#ffd36e">collector</text>
-                  <text x="128" y="290" fill="#6ee7ff">electric field between collectors</text>
+                  <text x="330" y="56" fill="#b3a8b9">(front + back)</text>
+                  <text x="6" y="64" fill="#b3a8b9">aluminum sectors ↘</text>
+                  <text x="20" y="176" fill="#f5d08a">collector</text>
+                  <text x="292" y="176" fill="#f5d08a">collector</text>
+                  <text x="128" y="290" fill="#a9d6e5">electric field between collectors</text>
                   <text x="420" y="222">VEX motor</text>
-                  <text x="356" y="112" fill="#9aa0c8">figure-8 belt</text>
-                  <text x="356" y="126" fill="#9aa0c8">(3D-printed pulleys)</text>
+                  <text x="356" y="112" fill="#b3a8b9">figure-8 belt</text>
+                  <text x="356" y="126" fill="#b3a8b9">(3D-printed pulleys)</text>
                 </g>
               </svg>
-              <figcaption class="mono">How it works (simplified). The figure-8 belt spins the disks in opposite directions.</figcaption>
+              <figcaption class="small">How it works (simplified). The figure-8 belt spins the disks in opposite directions.</figcaption>
             </figure>
             <div class="gallery tiles" aria-label="Rover design process photos">
-              <div class="frame zoomable" data-file="assets/img/rover-sketch.webp"><img src="assets/img/rover-sketch.webp" alt="Hand-drawn early sketch of the generator: CD-sized disk on a center axle between two supports, with dimensions and a question mark over the drive" loading="lazy" width="1200" height="1600" /></div>
-              <div class="frame zoomable" data-file="assets/img/rover-v1.jpg: first prototype"><img src="assets/img/rover-v1.jpg" alt="First prototype (v1)" loading="lazy" /></div>
-              <div class="frame zoomable" data-file="assets/img/rover-v2.jpg: final prototype"><img src="assets/img/rover-v2.jpg" alt="Final prototype" loading="lazy" /></div>
+              <div class="frame zoomable" data-cap="the first sketch" data-file="assets/img/rover-sketch.webp"><img src="assets/img/rover-sketch.webp" alt="Hand-drawn early sketch of the generator: CD-sized disk on a center axle between two supports, with dimensions and a question mark over the drive" loading="lazy" width="1200" height="1600" /></div>
+              <div class="frame zoomable" data-cap="v1 (didn’t work)" data-file="assets/img/rover-v1.jpg"><img src="assets/img/rover-v1.jpg" alt="First prototype (v1)" loading="lazy" /></div>
+              <div class="frame zoomable" data-cap="final!" data-file="assets/img/rover-v2.jpg"><img src="assets/img/rover-v2.jpg" alt="Final prototype" loading="lazy" /></div>
             </div>
-            <p class="gallery-hint mono">sketch → v1 → final · tap to enlarge</p>
+            <p class="gallery-hint">tap a photo to enlarge</p>
           </div>
 
           <ol class="log">
@@ -349,17 +396,18 @@
         <!-- Failure → redesign -->
         <div class="iteration">
           <div class="iter-card fail">
-            <span class="iter-label mono">v1 · failed</span>
+            <span class="iter-label">v1 · failed</span>
+            <span class="note fail-note">this one taught me the most</span>
             <p>The first prototype spun, but it produced too little charge to be useful.</p>
           </div>
           <div class="iter-arrow" aria-hidden="true">→</div>
           <div class="iter-card why">
-            <span class="iter-label mono">diagnosis</span>
+            <span class="iter-label">diagnosis</span>
             <p>We tested each part separately and found charge was leaking through the frame, and the collectors sat too far from the disks to pick up charge. That pointed us to spacing, collector placement, and isolation.</p>
           </div>
           <div class="iter-arrow" aria-hidden="true">→</div>
           <div class="iter-card win">
-            <span class="iter-label mono">final · what changed</span>
+            <span class="iter-label">final · what changed</span>
             <p>Adjusted <strong>disk spacing</strong>, moved the <strong>collectors</strong>, and improved <strong>electrical isolation</strong>. The final prototype generated an electric field.</p>
           </div>
         </div>
@@ -369,7 +417,7 @@
     <!-- ================= 3. MORE PROJECTS ================= -->
     <section id="more" class="section">
       <div class="section-head reveal">
-        <p class="eyebrow mono">03 / more launches</p>
+        <p class="note">smaller adventures</p>
         <h2>More Projects</h2>
       </div>
 
@@ -378,7 +426,7 @@
         <article class="card reveal" data-gallery>
           <div class="frame card-img zoomable" data-file="assets/img/starpath-nav.webp">
             <img src="assets/img/starpath-nav.webp" alt="Starpath's constellation-style site tour: click the stars to explore" loading="lazy" width="1600" height="838" />
-            <span class="more-shots mono">+3 screens</span>
+            <span class="more-shots">+3 screens</span>
           </div>
           <div hidden>
             <img data-src="assets/img/starpath-hub.webp" alt="Starpath resource hub: searchable grid of scholarships, internships and programs, filterable by state and grade" />
@@ -388,7 +436,7 @@
           <div class="card-body">
             <h3>Starpath <span class="badge">in beta</span></h3>
             <p>A student-built hub where students share scholarship and opportunity resources and give each other feedback. It has a searchable resource hub, an interactive U.S. map of opportunities by state, and a constellation-style site tour. I co-founded it and lead development.</p>
-            <span class="card-meta mono">Co-founder &amp; lead dev · 2025 – present</span>
+            <span class="card-meta">Co-founder &amp; lead dev · 2025 – present</span>
           </div>
         </article>
 
@@ -397,7 +445,7 @@
           <div class="card-body">
             <h3>Meyinigar Poonga <span class="badge gold">INFITT 1st place</span></h3>
             <p>"Virtual Park": a gamified platform where children of immigrant families explore Tamil language and culture at their own pace, using AI tools. Built in a 3-day international hackathon.</p>
-            <span class="card-meta mono">Lead developer · Summer 2024 · code ↗</span>
+            <span class="card-meta">Lead developer · Summer 2024 · code ↗</span>
           </div>
         </a>
 
@@ -406,7 +454,7 @@
           <div class="card-body">
             <h3>Spider Silk Biomaterials <span class="badge gold">1st in Texas</span></h3>
             <p>Research on spider silk proteins (spidroins) in tissue-engineering scaffolds for inflammation control and biodegradability. I led the team from 2nd at regionals to 1st in Texas, and then on to nationals.</p>
-            <span class="card-meta mono">Team leader · TSA Biotechnology Design · 2024–25</span>
+            <span class="card-meta">Team leader · TSA Biotechnology Design · 2024–25</span>
           </div>
         </article>
 
@@ -415,7 +463,7 @@
           <div class="card-body">
             <h3>Mental Health Information Gatherer <span class="badge">8th in Texas</span></h3>
             <p>A prototype that gathers information on mental-health symptoms through friendly, conversational questions. Theme: "Health Informatics." 3rd at regionals.</p>
-            <span class="card-meta mono">Team leader · TSA Engineering Design · 2023–24 · code ↗</span>
+            <span class="card-meta">Team leader · TSA Engineering Design · 2023–24 · code ↗</span>
           </div>
         </a>
 
@@ -424,7 +472,7 @@
           <div class="card-body">
             <h3>AI Résumé-Tailoring Agent <span class="badge">in development</span></h3>
             <p>A Python agent that tailors a résumé to each opportunity using Google's Gemini API. It stores résumé data as structured JSON, supports command-line editing, and exports Word files with python-docx.</p>
-            <span class="card-meta mono">Developer · 2026 – present</span>
+            <span class="card-meta">Developer · 2026 – present</span>
           </div>
         </article>
       </div>
@@ -433,7 +481,7 @@
     <!-- ================= 4. WRITING & RESEARCH ================= -->
     <section id="writing" class="section">
       <div class="section-head reveal">
-        <p class="eyebrow mono">04 / signals</p>
+        <p class="note">research rabbit holes I fell into</p>
         <h2>Writing &amp; Research</h2>
         <p class="section-sub">Technical briefs where I explain new research in plain language.</p>
       </div>
@@ -444,7 +492,7 @@
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
           </div>
           <div>
-            <p class="doc-kind mono">Brief · 2025</p>
+            <p class="doc-kind">Brief · 2025</p>
             <h3>Quantum Computing and the Innovation of Google’s Willow</h3>
             <p>Explains qubits, superposition, entanglement, and decoherence. It also covers how Willow’s surface-code error correction lets logical qubits improve as the lattice grows, and where it still falls short: decoder delay and an error floor.</p>
             <a class="link-pill" href="assets/docs/willow-brief.pdf" target="_blank" rel="noopener">Read PDF ↗</a>
@@ -455,7 +503,7 @@
             <svg viewBox="0 0 24 24"><path d="M3 12c3-6 6-6 9 0s6 6 9 0"/><path d="M3 17c3-6 6-6 9 0s6 6 9 0" opacity=".5"/><path d="M12 2v4M10 4h4"/></svg>
           </div>
           <div>
-            <p class="doc-kind mono">Technical report · 2024 · Texas TSA</p>
+            <p class="doc-kind">Technical report · 2024 · Texas TSA</p>
             <h3>Ice-Printing Artificial Blood Vessels</h3>
             <p>Reviews Carnegie Mellon research that 3D-prints heavy-water ice templates and embeds them in UV-crosslinked GelMA hydrogel. The channels are then seeded with endothelial cells to model blood-vessel networks.</p>
             <a class="link-pill" href="assets/docs/ice-printing-brief.pdf" target="_blank" rel="noopener">Read PDF ↗</a>
@@ -467,7 +515,7 @@
     <!-- ================= 5. LEADERSHIP & IMPACT ================= -->
     <section id="leadership" class="section">
       <div class="section-head reveal">
-        <p class="eyebrow mono">05 / crew</p>
+        <p class="note">where I show up</p>
         <h2>Leadership &amp; Impact</h2>
       </div>
 
@@ -514,7 +562,7 @@
     <!-- ================= 6. AWARDS & SKILLS ================= -->
     <section id="awards" class="section">
       <div class="section-head reveal">
-        <p class="eyebrow mono">06 / honors &amp; toolkit</p>
+        <p class="note">a few shiny things</p>
         <h2>Awards &amp; Skills</h2>
         <p class="section-sub">Full details are on my <a href="assets/docs/resume.pdf" target="_blank" rel="noopener">résumé</a>.</p>
       </div>
@@ -533,15 +581,15 @@
         </ul>
 
         <div class="skills reveal">
-          <p class="skills-label mono">programming</p>
+          <p class="skills-label">programming</p>
           <ul class="chips"><li>Swift / SwiftUI</li><li>Python</li><li>Java</li><li>JavaScript</li><li>HTML/CSS</li><li>SQL</li><li>Front- &amp; back-end web</li><li>UI &amp; graphic design</li></ul>
-          <p class="skills-label mono">tools</p>
+          <p class="skills-label">tools</p>
           <ul class="chips"><li>Xcode</li><li>Git/GitHub</li><li>VS Code</li><li>Fusion 360</li><li>Revit</li><li>VEX</li><li>Firebase</li></ul>
-          <p class="skills-label mono">lab</p>
+          <p class="skills-label">lab</p>
           <ul class="chips"><li>Molecular biology techniques</li><li>Lab equipment handling</li><li>Data interpretation</li></ul>
-          <p class="skills-label mono">certifications</p>
+          <p class="skills-label">certifications</p>
           <ul class="chips"><li>Autodesk Certified User: Fusion 360</li><li>NASA Open Science Essentials</li><li>CPR / First Aid (BLS)</li><li>Stop the Bleed</li><li>OSHA Learn Safe</li></ul>
-          <p class="skills-label mono">languages</p>
+          <p class="skills-label">languages</p>
           <ul class="chips"><li>English</li><li>Tamil (I teach it weekly)</li></ul>
         </div>
       </div>
@@ -550,7 +598,7 @@
     <!-- ================= 7. CONTACT ================= -->
     <section id="contact" class="section contact">
       <div class="contact-inner reveal">
-        <p class="eyebrow mono">07 / open channel</p>
+        <p class="note">say hi!</p>
         <h2>Let's build something.</h2>
         <p class="section-sub">The best way to reach me is email.</p>
         <div class="email-row">
@@ -572,7 +620,10 @@
   </main>
 
   <footer class="footer">
-    <p class="mono">© <span id="year"></span> Lakshanya Prabhu · built by hand, launched from McKinney, TX</p>
+    <div class="footer-text">
+      <p class="note">நன்றி (nandri), thank you for visiting ✨</p>
+      <p class="small">© <span id="year"></span> Lakshanya Prabhu · built by hand in McKinney, TX · psst, click the sky</p>
+    </div>
     <button class="to-top" aria-label="Back to top">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3 2 5 6 5 10l-2 4H9l-2-4c0-4 2-8 5-10z"/><circle cx="12" cy="10" r="2"/><path d="M9 16l-2 4 3-1M15 16l2 4-3-1"/></svg>
     </button>
@@ -583,7 +634,7 @@
     <button class="lb-nav lb-prev" aria-label="Previous image">‹</button>
     <img alt="" />
     <button class="lb-nav lb-next" aria-label="Next image">›</button>
-    <p class="lb-caption mono"></p>
+    <p class="lb-caption"></p>
   </div>
 
   <script src="script.js" defer></script>
