@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lakshanya Prabhu · Portfolio</title>
+  <meta name="description" content="Lakshanya Prabhu builds technology that makes information and opportunity accessible: Clarity, Orbit, Kubera, and more." />
+  <meta property="og:title" content="Lakshanya Prabhu · Portfolio" />
+  <meta property="og:description" content="I build technology that makes information and opportunity accessible." />
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+  <meta name="theme-color" content="#05060f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='7' fill='%236ee7ff'/><ellipse cx='16' cy='16' rx='14' ry='4.5' fill='none' stroke='%23b69cff' stroke-width='2' transform='rotate(-20 16 16)'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+    ============================================================
+    HOW TO FINISH THIS
+    ------------------------------------------------------------
+    • Anything in <span class="todo">[brackets]</span> still needs you.
+      Replace the text and delete the span wrapper.
+      (Ctrl+F for  class="todo"  to find every one.)
+    • Images: drop files into assets/img/ using the names in each
+      <img src="...">. Until a file exists, the page shows a dashed
+      placeholder labeled with the file name it expects.
+    • PDFs go in assets/docs/ (resume.pdf, willow-brief.pdf, ...)
+    ============================================================
+  -->
+
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <a href="#about" class="brand" aria-label="Back to top">
+      <span class="brand-planet"></span>
+      <span class="brand-name">Lakshanya Prabhu</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-links" class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#more">More</a>
+      <a href="#writing">Writing</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= 1. ABOUT / HERO ================= -->
+    <section id="about" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow mono">// transmission incoming</p>
+          <h1>Hi, I'm <span class="grad">Lakshanya&nbsp;Prabhu</span>.</h1>
+          <p class="tagline">I build technology that makes information and opportunity accessible.</p>
+          <p class="hero-sub">
+            Senior at McKinney North High School in McKinney, Texas (Class of 2027). I build apps, run labs,
+            lead my TSA chapter, and teach Tamil on weekends, and I want to study electrical &amp; computer engineering and business.
+          </p>
+          <ul class="hero-stats">
+            <li><strong>5 / 612</strong><span>class rank</span></li>
+            <li><strong>4.0</strong><span>unweighted GPA</span></li>
+            <li><strong>National Merit</strong><span>Commended Scholar</span></li>
+          </ul>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="assets/docs/resume.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h5"/></svg>
+              Résumé
+            </a>
+            <a class="btn" href="https://github.com/Lakshanya-P" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a class="btn" href="mailto:lakshanya.pra@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orbit-system">
+            <div class="ring ring-1"><span class="moon m1" title="Clarity"></span></div>
+            <div class="ring ring-2"><span class="moon m2" title="Orbit"></span><span class="moon m3" title="Kubera"></span></div>
+            <div class="ring ring-3"><span class="moon m4" title="Starpath"></span></div>
+            <div class="frame avatar" data-file="assets/img/profile.jpg" data-initials="LP">
+              <img src="assets/img/profile.jpg" alt="Lakshanya Prabhu" width="400" height="400" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#projects" class="scroll-cue" aria-label="Scroll to projects">
+        <span class="mono">launch</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- ================= 2. FEATURED PROJECTS ================= -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">02 / featured missions</p>
+        <h2>Featured Projects</h2>
+        <p class="section-sub">Each one covers the problem, what I built, my role, the stack, the result, and what's next.</p>
+      </div>
+
+      <!-- ---------- CLARITY ---------- -->
+      <article class="case reveal" id="clarity" style="--accent:#7c9cff; --accent-2:#b69cff">
+        <header class="case-head">
+          <span class="mission mono">Mission 01 · 2025 – present</span>
+          <h3>Clarity</h3>
+          <p class="case-tag">A cognitive accessibility app for iOS that changes how dense information is presented to fit each person.</p>
+          <div class="case-links">
+            <a href="https://youtu.be/xhVOcf4qCKo" class="link-pill" target="_blank" rel="noopener">Watch pitch on YouTube ↗</a>
+          </div>
+        </header>
+
+        <div class="case-body">
+          <div class="case-media">
+            <div class="frame video" data-youtube="xhVOcf4qCKo" aria-label="Clarity pitch and demo video">
+              <button class="play" aria-label="Play Clarity pitch and demo">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+            <div class="chapters" role="group" aria-label="Jump to a part of the video">
+              <span class="mono">6-min pitch · jump to</span>
+              <button class="chapter" data-target="#clarity .video" data-start="75">▶ App demo · 1:15</button>
+              <button class="chapter" data-target="#clarity .video" data-start="173">▶ Architecture · 2:53</button>
+            </div>
+
+            <!-- Architecture, drawn from the pitch. Swap for a screenshot of your slide if you prefer:
+                 <div class="frame zoomable" data-file="assets/img/clarity-architecture.png"><img src="assets/img/clarity-architecture.png" alt="..."></div> -->
+            <figure class="arch" aria-label="Clarity architecture: all processing stays on the phone">
+              <div class="arch-device">
+                <span class="arch-lock mono">🔒 everything runs on the phone</span>
+                <p class="arch-title">The Adaptive Engine</p>
+                <ol class="arch-steps">
+                  <li><span>📄</span>Information Input<small>camera OCR · text</small></li>
+                  <li><span>🔍</span>Content Analysis</li>
+                  <li><span>⚠️</span>Cognitive Barrier Analysis</li>
+                  <li><span>👤</span>Personal Cognitive Profile</li>
+                  <li class="hl"><span>🧠</span>Adaptation Engine<small>on-device AI</small></li>
+                  <li><span>📱</span>Personalized Experience<small>SwiftUI · speech</small></li>
+                </ol>
+              </div>
+              <div class="arch-next mono">next → dedicated hardware companion device</div>
+              <figcaption class="mono">How Clarity makes decisions (from the pitch, 2:53)</figcaption>
+            </figure>
+          </div>
+
+          <ol class="log">
+            <li><h4>Problem</h4><p>Dense information like articles, forms, and instructions comes in one format for everyone. For people who process information differently, that format can stop them from getting what they need.</p></li>
+            <li><h4>What I built</h4><p>An iOS app that adapts how dense information is presented to each user's cognitive needs. It combines on-device OCR, speech, and AI, so nothing leaves the phone. That keeps it private.</p></li>
+            <li><h4>My role</h4><p>Founder &amp; solo developer, 8 hours a week. I did the design, the code, and the pitch.</p></li>
+            <li><h4>Tech</h4>
+              <ul class="chips"><li>Swift</li><li>SwiftUI</li><li>On-device OCR</li><li>Speech</li><li>On-device AI</li><li>Xcode</li></ul>
+            </li>
+            <li class="result">
+              <h4>Result</h4>
+              <p class="stat"><span data-count="400">400</span>+</p>
+              <p>entrants in the Kode With Klossy × Apple App Challenge, where I entered Clarity.</p>
+            </li>
+            <li><h4>Learned / next</h4><p>Getting Clarity to work proved it was possible, not that anyone would use it. Pitching it taught me the hardest questions were who pays and how it reaches people who struggle with technology, which is why I’m designing a dedicated hardware device next.</p></li>
+          </ol>
+        </div>
+      </article>
+
+      <!-- ---------- ORBIT ---------- -->
+      <article class="case reveal" id="orbit" style="--accent:#6ee7ff; --accent-2:#5eead4">
+        <header class="case-head">
+          <span class="mission mono">Mission 02 · June 2026 – present</span>
+          <h3>Orbit</h3>
+          <p class="case-tag">A volunteer-hour tracking platform for my school's Student Council, replacing hand-kept records.</p>
+          <div class="case-links">
+            <a href="https://github.com/Lakshanya-P/orbit" class="link-pill" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </header>
+
+        <div class="case-body">
+          <div class="case-media">
+            <div class="gallery" tabindex="0" aria-label="Orbit screenshots">
+              <div class="frame zoomable" data-file="assets/img/orbit-landing.webp"><img src="assets/img/orbit-landing.webp" alt="Orbit landing page with Student Login and Teacher Login" loading="lazy" width="1600" height="843" /></div>
+              <div class="frame zoomable" data-file="assets/img/orbit-student.webp"><img src="assets/img/orbit-student.webp" alt="Orbit student dashboard with progress rings for StuCo and Green Chord hours and submission history" loading="lazy" width="1600" height="833" /></div>
+              <div class="frame zoomable" data-file="assets/img/orbit-log.webp"><img src="assets/img/orbit-log.webp" alt="Orbit Log Volunteer Hours form with category, event, date, hours, organization and verifying contact" loading="lazy" width="1600" height="861" /></div>
+              <div class="frame zoomable" data-file="assets/img/orbit-admin.webp"><img src="assets/img/orbit-admin.webp" alt="Orbit admin student roster filtered by grade, with student names blurred for privacy" loading="lazy" width="1600" height="832" /></div>
+            </div>
+            <p class="gallery-hint mono">← swipe · tap to enlarge →</p>
+          </div>
+
+          <ol class="log">
+            <li><h4>Problem</h4><p>In three years on Student Council, I watched students' volunteer hours get tracked by hand. It was slow and records got messy.</p></li>
+            <li><h4>What I built</h4><p>A web platform where students log hours by category (such as StuCo and Green Chord), name a contact who can verify each entry, and watch their progress toward each requirement. Staff use an admin dashboard to search and filter the student roster, manage profiles, and organize records.</p></li>
+            <li><h4>My role</h4><p>Founder &amp; developer, as part of my Senior Class Secretary work (8 hours a week). I taught myself database design and Git/GitHub to build and maintain it.</p></li>
+            <li><h4>Tech</h4>
+              <ul class="chips"><li>JavaScript</li><li>HTML/CSS</li><li>Firebase Auth</li><li>Cloud Firestore</li><li>Git/GitHub</li></ul>
+            </li>
+            <li class="result">
+              <h4>Result</h4>
+              <p class="stat"><span data-count="100">100</span>+</p>
+              <p>students and staff use Orbit to log and manage volunteer hours.</p>
+            </li>
+            <li><h4>Learned / next</h4><p>Real users find edge cases a test plan never does: <span class="todo">[e.g., students logging the same event twice, or teachers needing to approve hours in bulk]</span>. Next, I’m adding exportable reports for counselors.</p></li>
+          </ol>
+        </div>
+      </article>
+
+      <!-- ---------- KUBERA ---------- -->
+      <article class="case reveal" id="kubera" style="--accent:#5ee08a; --accent-2:#ffd36e">
+        <header class="case-head">
+          <span class="mission mono">Mission 03 · Summer 2025</span>
+          <h3><img class="case-icon" src="assets/img/kubera-icon.png" alt="" width="44" height="44" /> Kubera</h3>
+          <p class="case-tag">A financial literacy app that teaches kids how money works, from their first bank account to their first stock.</p>
+          <div class="case-links">
+            <a href="https://github.com/Lakshanya-P/kubera" class="link-pill" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </header>
+
+        <div class="case-body">
+          <div class="case-media">
+            <div class="gallery" tabindex="0" aria-label="Kubera screenshots">
+              <div class="frame zoomable" data-file="assets/img/kubera-lesson.webp"><img src="assets/img/kubera-lesson.webp" alt="Kubera lesson: Banks vs Credit Unions with a quiz question" loading="lazy" width="1600" height="1078" /></div>
+              <div class="frame zoomable" data-file="assets/img/kubera-market.webp"><img src="assets/img/kubera-market.webp" alt="Kubera Tiger Market: net worth in Stripes and trending parody stocks like Purrvidia and Netpurrix" loading="lazy" width="1600" height="1080" /></div>
+              <div class="frame zoomable" data-file="assets/img/kubera-tutorial.webp"><img src="assets/img/kubera-tutorial.webp" alt="Kubera narrated tutorial explaining how to read stock trends and the one-day hold rule" loading="lazy" width="1600" height="1078" /></div>
+              <div class="frame zoomable" data-file="assets/img/kubera-transactions.webp"><img src="assets/img/kubera-transactions.webp" alt="Kubera transactions screen with a guide explaining real balance tracking" loading="lazy" width="1600" height="1077" /></div>
+              <div class="frame zoomable" data-file="assets/img/kubera-goals.webp"><img src="assets/img/kubera-goals.webp" alt="Kubera savings goals with a progress ring and new goal form" loading="lazy" width="1600" height="1081" /></div>
+            </div>
+            <p class="gallery-hint mono">← swipe · tap to enlarge →</p>
+
+            <div class="story">
+              <p class="story-title mono">From iPad to Xcode</p>
+              <ol class="story-steps">
+                <li><span class="dot"></span><strong>Started on an iPad</strong><span>Built the first version for Apple's Swift Student Challenge with no prior Swift or app experience.</span></li>
+                <li><span class="dot"></span><strong>No Mac? Rebuilt it by hand</strong><span>Exported the iPad project and published it to GitHub manually, recreating its folder structure file by file.</span></li>
+                <li><span class="dot"></span><strong>Moved to Xcode</strong><span>Rebuilt it as a full iOS app with banking, budgeting, goals, and a simulated stock market.</span></li>
+              </ol>
+            </div>
+          </div>
+
+          <ol class="log">
+            <li><h4>Problem</h4><p>Kids rarely get a safe, hands-on way to practice money skills like saving, budgeting, and investing before those skills matter.</p></li>
+            <li><h4>What I built</h4><p>An iOS app with age-adapted lessons in banking, budgeting, and goal-setting. Kids earn "Stripes" for finishing lessons and spend them in the <em>Tiger Market</em>, a simulated stock market of 30 parody companies (Purrvidia, Pawmazon, Meowsoft…), with no real money involved.</p></li>
+            <li><h4>My role</h4><p>Founder &amp; lead developer, 17 hours a week for 12 weeks.</p></li>
+            <li><h4>Tech</h4>
+              <ul class="chips"><li>Swift</li><li>SwiftUI</li><li>Python</li><li>Market data APIs</li><li>Firebase</li><li>AVFoundation</li></ul>
+            </li>
+            <li class="result">
+              <h4>Result</h4>
+              <p class="stat"><span data-count="20">20</span>+</p>
+              <p>kids beta-tested Kubera. It also has a live multiplayer leaderboard and narrated lessons for three age bands.</p>
+            </li>
+            <li><h4>Learned / next</h4><p>Not having a Mac didn’t stop the project. It taught me to work around constraints instead of waiting for perfect tools. Beta testers showed me <span class="todo">[e.g., younger kids needed narrated lessons, which is why I added audio for three age bands]</span>, and next I want to publish it on the App Store.</p></li>
+          </ol>
+        </div>
+      </article>
+
+      <!-- ---------- MARS ROVER ---------- -->
+      <article class="case reveal" id="rover" style="--accent:#ff8a5c; --accent-2:#ff5f6d">
+        <header class="case-head">
+          <span class="mission mono">Mission 04 · 2025 – 2026 · TSA Engineering Design</span>
+          <h3>Mars Rover Dust Mitigation</h3>
+          <p class="case-tag">A Wimshurst-inspired electrostatic generator to keep Martian dust out of rover wheel axles. Competition theme: "Tools of Scientific Discovery."</p>
+        </header>
+
+        <div class="case-body">
+          <div class="case-media">
+            <!-- Simplified mechanism diagram. Replace with your own drawing by swapping this <figure>
+                 for: <div class="frame zoomable" data-file="assets/img/rover-diagram.png"><img src="assets/img/rover-diagram.png" alt="..."></div> -->
+            <figure class="diagram rover-diagram">
+              <svg viewBox="0 0 520 300" role="img" aria-label="Diagram: a VEX motor drives two counter-rotating disks through a figure-eight belt; aluminum sectors on the disks build up charge that collectors pick up to create an electric field.">
+                <defs>
+                  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker>
+                </defs>
+                <!-- back disk -->
+                <circle cx="190" cy="140" r="100" fill="none" stroke="#5b5f8f" stroke-width="2" stroke-dasharray="4 4"/>
+                <!-- front disk -->
+                <circle cx="180" cy="140" r="100" fill="rgba(255,138,92,0.06)" stroke="#ff8a5c" stroke-width="2"/>
+                <g fill="#c9cde8" opacity=".85">
+                  <rect x="176" y="48" width="8" height="26" rx="2"/>
+                  <rect x="176" y="206" width="8" height="26" rx="2"/>
+                  <rect x="88" y="136" width="26" height="8" rx="2"/>
+                  <rect x="246" y="136" width="26" height="8" rx="2"/>
+                  <rect x="114" y="70" width="8" height="26" rx="2" transform="rotate(-45 118 83)"/>
+                  <rect x="238" y="184" width="8" height="26" rx="2" transform="rotate(-45 242 197)"/>
+                  <rect x="238" y="70" width="8" height="26" rx="2" transform="rotate(45 242 83)"/>
+                  <rect x="114" y="184" width="8" height="26" rx="2" transform="rotate(45 118 197)"/>
+                </g>
+                <circle cx="180" cy="140" r="10" fill="#11142c" stroke="#ff8a5c" stroke-width="2"/>
+                <!-- rotation arrows -->
+                <path d="M110 40 A110 110 0 0 1 250 40" fill="none" stroke="#ff8a5c" stroke-width="1.5" marker-end="url(#arr)"/>
+                <path d="M260 250 A110 110 0 0 1 120 250" fill="none" stroke="#7c80b8" stroke-width="1.5" marker-end="url(#arr)"/>
+                <!-- collectors -->
+                <path d="M60 140 h28 M272 140 h30" stroke="#ffd36e" stroke-width="3"/>
+                <circle cx="50" cy="140" r="9" fill="#ffd36e"/>
+                <circle cx="312" cy="140" r="9" fill="#ffd36e"/>
+                <path d="M62 128 q125 -40 238 0" fill="none" stroke="#6ee7ff" stroke-width="1.2" stroke-dasharray="3 5"/>
+                <path d="M62 152 q125 40 238 0" fill="none" stroke="#6ee7ff" stroke-width="1.2" stroke-dasharray="3 5"/>
+                <!-- belt + motor -->
+                <path d="M180 140 C 300 100, 380 230, 440 200 C 470 185, 470 160, 440 150 C 380 130, 300 190, 190 140" fill="none" stroke="#9aa0c8" stroke-width="1.5"/>
+                <rect x="420" y="150" width="62" height="52" rx="8" fill="#11142c" stroke="#9aa0c8" stroke-width="1.5"/>
+                <circle cx="440" cy="176" r="8" fill="none" stroke="#ff8a5c" stroke-width="2"/>
+                <!-- labels -->
+                <g font-family="JetBrains Mono, monospace" font-size="11" fill="#c9cde8">
+                  <text x="330" y="40">counter-rotating disks</text>
+                  <text x="330" y="56" fill="#9aa0c8">(front + back)</text>
+                  <text x="6" y="64" fill="#9aa0c8">aluminum sectors ↘</text>
+                  <text x="20" y="176" fill="#ffd36e">collector</text>
+                  <text x="292" y="176" fill="#ffd36e">collector</text>
+                  <text x="128" y="290" fill="#6ee7ff">electric field between collectors</text>
+                  <text x="420" y="222">VEX motor</text>
+                  <text x="356" y="112" fill="#9aa0c8">figure-8 belt</text>
+                  <text x="356" y="126" fill="#9aa0c8">(3D-printed pulleys)</text>
+                </g>
+              </svg>
+              <figcaption class="mono">How it works (simplified). The figure-8 belt spins the disks in opposite directions.</figcaption>
+            </figure>
+            <div class="gallery tiles" aria-label="Rover design process photos">
+              <div class="frame zoomable" data-file="assets/img/rover-sketch.webp"><img src="assets/img/rover-sketch.webp" alt="Hand-drawn early sketch of the generator: CD-sized disk on a center axle between two supports, with dimensions and a question mark over the drive" loading="lazy" width="1200" height="1600" /></div>
+              <div class="frame zoomable" data-file="assets/img/rover-v1.jpg: first prototype"><img src="assets/img/rover-v1.jpg" alt="First prototype (v1)" loading="lazy" /></div>
+              <div class="frame zoomable" data-file="assets/img/rover-v2.jpg: final prototype"><img src="assets/img/rover-v2.jpg" alt="Final prototype" loading="lazy" /></div>
+            </div>
+            <p class="gallery-hint mono">sketch → v1 → final · tap to enlarge</p>
+          </div>
+
+          <ol class="log">
+            <li><h4>Problem</h4><p>Martian dust gets into rover wheel axles, where it wears down moving parts on missions that can't be repaired.</p></li>
+            <li><h4>What I built</h4><p>A Wimshurst-inspired electrostatic generator with counter-rotating disks carrying aluminum sectors. A VEX motor drives them through 3D-printed pulleys and a figure-eight belt.</p></li>
+            <li><h4>My role</h4><p>Team leader &amp; prototype engineer: I led the design and built the prototype.</p></li>
+            <li><h4>Tech</h4>
+              <ul class="chips"><li>Electrostatics</li><li>Wimshurst machine</li><li>VEX motor</li><li>3D printing</li><li>Belt drive</li></ul>
+            </li>
+            <li class="result">
+              <h4>Result</h4>
+              <p class="stat"><span data-count="3">3</span> fixes</p>
+              <p>to spacing, collectors, and isolation turned a low-charge first build into a prototype that generated an electric field. That showed the charge-generation mechanism works.</p>
+            </li>
+            <li><h4>Learned / next</h4><p>A machine that spins isn’t the same as one that works. The failed first build taught me to test each subsystem’s output early instead of only at the end. Next, I’d measure field strength and how much dust it actually repels.</p></li>
+          </ol>
+        </div>
+
+        <!-- Failure → redesign -->
+        <div class="iteration">
+          <div class="iter-card fail">
+            <span class="iter-label mono">v1 · failed</span>
+            <p>The first prototype spun, but it produced too little charge to be useful.</p>
+          </div>
+          <div class="iter-arrow" aria-hidden="true">→</div>
+          <div class="iter-card why">
+            <span class="iter-label mono">diagnosis</span>
+            <p>We tested each part separately and found charge was leaking through the frame, and the collectors sat too far from the disks to pick up charge. That pointed us to spacing, collector placement, and isolation.</p>
+          </div>
+          <div class="iter-arrow" aria-hidden="true">→</div>
+          <div class="iter-card win">
+            <span class="iter-label mono">final · what changed</span>
+            <p>Adjusted <strong>disk spacing</strong>, moved the <strong>collectors</strong>, and improved <strong>electrical isolation</strong>. The final prototype generated an electric field.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ================= 3. MORE PROJECTS ================= -->
+    <section id="more" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">03 / more launches</p>
+        <h2>More Projects</h2>
+      </div>
+
+      <div class="grid cards">
+        <!-- No public link yet: when Starpath has one, change <article> to <a href="..."> -->
+        <article class="card reveal" data-gallery>
+          <div class="frame card-img zoomable" data-file="assets/img/starpath-nav.webp">
+            <img src="assets/img/starpath-nav.webp" alt="Starpath's constellation-style site tour: click the stars to explore" loading="lazy" width="1600" height="838" />
+            <span class="more-shots mono">+3 screens</span>
+          </div>
+          <div hidden>
+            <img data-src="assets/img/starpath-hub.webp" alt="Starpath resource hub: searchable grid of scholarships, internships and programs, filterable by state and grade" />
+            <img data-src="assets/img/starpath-map.webp" alt="Starpath interactive U.S. map showing opportunities by state" />
+            <img data-src="assets/img/starpath-welcome.webp" alt="Starpath welcome page" />
+          </div>
+          <div class="card-body">
+            <h3>Starpath <span class="badge">in beta</span></h3>
+            <p>A student-built hub where students share scholarship and opportunity resources and give each other feedback. It has a searchable resource hub, an interactive U.S. map of opportunities by state, and a constellation-style site tour. I co-founded it and lead development.</p>
+            <span class="card-meta mono">Co-founder &amp; lead dev · 2025 – present</span>
+          </div>
+        </article>
+
+        <a class="card reveal" href="https://github.com/Lakshanya-P/tamil_virtual_park" target="_blank" rel="noopener">
+          <div class="frame card-img" data-file="assets/img/meyinigar-poonga.jpg"><img src="assets/img/meyinigar-poonga.jpg" alt="Meyinigar Poonga title screen: Tamil letters flowing toward a robotic hand" loading="lazy" /></div>
+          <div class="card-body">
+            <h3>Meyinigar Poonga <span class="badge gold">INFITT 1st place</span></h3>
+            <p>"Virtual Park": a gamified platform where children of immigrant families explore Tamil language and culture at their own pace, using AI tools. Built in a 3-day international hackathon.</p>
+            <span class="card-meta mono">Lead developer · Summer 2024 · code ↗</span>
+          </div>
+        </a>
+
+        <article class="card reveal">
+          <div class="frame card-img" data-file="assets/img/spider-silk.jpg"><img src="assets/img/spider-silk.jpg" alt="Spider silk biomaterials project display" loading="lazy" /></div>
+          <div class="card-body">
+            <h3>Spider Silk Biomaterials <span class="badge gold">1st in Texas</span></h3>
+            <p>Research on spider silk proteins (spidroins) in tissue-engineering scaffolds for inflammation control and biodegradability. I led the team from 2nd at regionals to 1st in Texas, and then on to nationals.</p>
+            <span class="card-meta mono">Team leader · TSA Biotechnology Design · 2024–25</span>
+          </div>
+        </article>
+
+        <a class="card reveal" href="https://github.com/Lakshanya-P/mhig" target="_blank" rel="noopener">
+          <div class="frame card-img" data-file="assets/img/mhig.jpg"><img src="assets/img/mhig.jpg" alt="Mental Health Information Gatherer prototype" loading="lazy" /></div>
+          <div class="card-body">
+            <h3>Mental Health Information Gatherer <span class="badge">8th in Texas</span></h3>
+            <p>A prototype that gathers information on mental-health symptoms through friendly, conversational questions. Theme: "Health Informatics." 3rd at regionals.</p>
+            <span class="card-meta mono">Team leader · TSA Engineering Design · 2023–24 · code ↗</span>
+          </div>
+        </a>
+
+        <article class="card reveal">
+          <div class="frame card-img" data-file="assets/img/resume-agent.jpg"><img src="assets/img/resume-agent.jpg" alt="AI résumé-tailoring agent running in a terminal" loading="lazy" /></div>
+          <div class="card-body">
+            <h3>AI Résumé-Tailoring Agent <span class="badge">in development</span></h3>
+            <p>A Python agent that tailors a résumé to each opportunity using Google's Gemini API. It stores résumé data as structured JSON, supports command-line editing, and exports Word files with python-docx.</p>
+            <span class="card-meta mono">Developer · 2026 – present</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 4. WRITING & RESEARCH ================= -->
+    <section id="writing" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">04 / signals</p>
+        <h2>Writing &amp; Research</h2>
+        <p class="section-sub">Technical briefs where I explain new research in plain language.</p>
+      </div>
+
+      <div class="grid docs">
+        <article class="doc reveal">
+          <div class="doc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+          </div>
+          <div>
+            <p class="doc-kind mono">Brief · 2025</p>
+            <h3>Quantum Computing and the Innovation of Google’s Willow</h3>
+            <p>Explains qubits, superposition, entanglement, and decoherence. It also covers how Willow’s surface-code error correction lets logical qubits improve as the lattice grows, and where it still falls short: decoder delay and an error floor.</p>
+            <a class="link-pill" href="assets/docs/willow-brief.pdf" target="_blank" rel="noopener">Read PDF ↗</a>
+          </div>
+        </article>
+        <article class="doc reveal">
+          <div class="doc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 12c3-6 6-6 9 0s6 6 9 0"/><path d="M3 17c3-6 6-6 9 0s6 6 9 0" opacity=".5"/><path d="M12 2v4M10 4h4"/></svg>
+          </div>
+          <div>
+            <p class="doc-kind mono">Technical report · 2024 · Texas TSA</p>
+            <h3>Ice-Printing Artificial Blood Vessels</h3>
+            <p>Reviews Carnegie Mellon research that 3D-prints heavy-water ice templates and embeds them in UV-crosslinked GelMA hydrogel. The channels are then seeded with endothelial cells to model blood-vessel networks.</p>
+            <a class="link-pill" href="assets/docs/ice-printing-brief.pdf" target="_blank" rel="noopener">Read PDF ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 5. LEADERSHIP & IMPACT ================= -->
+    <section id="leadership" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">05 / crew</p>
+        <h2>Leadership &amp; Impact</h2>
+      </div>
+
+      <div class="grid impact">
+        <article class="impact-card reveal">
+          <p class="impact-num"><span data-count="1">1</span><sup>st</sup></p>
+          <h3>Technology Student Association</h3>
+          <p>Led my school's first team to win <strong>1st in Texas</strong> and its first team at nationals (2025).</p>
+          <ul class="roles">
+            <li>Chapter President <span>2026–</span></li>
+            <li>Regional Treasurer, Region 11 <span>2026–</span></li>
+            <li>State Officer Candidate, picked from ~50 applicants <span>2026</span></li>
+            <li>Regional Secretary, the school's first regional officer <span>2024–25</span></li>
+          </ul>
+        </article>
+        <article class="impact-card reveal">
+          <p class="impact-num"><span data-count="9">9</span></p>
+          <h3>Biotechnology Club</h3>
+          <p>Co-founded my school's first biotech club. As President, I run <strong>9 hands-on</strong> molecular biology and genetic engineering labs a year for 15–20 members.</p>
+        </article>
+        <article class="impact-card reveal">
+          <p class="impact-num"><span data-count="25">25</span>+</p>
+          <h3>Girls in STEM</h3>
+          <p>Vice President of a <strong>25+ member</strong> chapter. I led 4 library outreach events on gender equity and access in STEM.</p>
+        </article>
+        <article class="impact-card reveal">
+          <p class="impact-num">100s</p>
+          <h3>CTE Student Ambassador</h3>
+          <p>On McKinney ISD's first ambassador team. I present at <strong>9+ elementary STEM nights</strong> and give 12+ talks a year, reaching hundreds of students.</p>
+        </article>
+        <article class="impact-card reveal">
+          <p class="impact-num"><span data-count="20">20</span>–<span data-count="30">30</span></p>
+          <h3>Tamil Teaching</h3>
+          <p>At Avvai Tamil School, I teach a class of <strong>20–30 heritage learners</strong> every year and design weekly lessons. I also helped organize a Mother Tongue Day for 200+ people.</p>
+        </article>
+        <article class="impact-card reveal">
+          <p class="impact-num"><span data-count="600">600</span></p>
+          <h3>Student Council</h3>
+          <p>Elected <strong>Senior Class Secretary</strong> by a 600-student class. I manage class data, designed the senior shirt, and built Orbit.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 6. AWARDS & SKILLS ================= -->
+    <section id="awards" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">06 / honors &amp; toolkit</p>
+        <h2>Awards &amp; Skills</h2>
+        <p class="section-sub">Full details are on my <a href="assets/docs/resume.pdf" target="_blank" rel="noopener">résumé</a>.</p>
+      </div>
+
+      <div class="awards-wrap">
+        <ul class="awards reveal">
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>National Merit Commended Scholar</strong><span>National · 2026</span></div></li>
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>AP Scholar with Distinction</strong><span>National · 2025 &amp; 2026</span></div></li>
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>Distinguished Young Woman of McKinney</strong><span>Title winner, advancing to Texas · 2026</span></div></li>
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>Texas TSA Statesman Degree</strong><span>State · 2026</span></div></li>
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>College Board National Recognition Program</strong><span>National · 2026</span></div></li>
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>Kode With Klossy Data Science Scholar</strong><span>National · team lead · 2025</span></div></li>
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>Texas TSA 1st Place, Biotechnology Design</strong><span>State · national qualifier · 2025</span></div></li>
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>INFITT International Hackathon, 1st Place</strong><span>International · 2024</span></div></li>
+          <li><span class="star" aria-hidden="true">✦</span><div><strong>FETNA Tamil Spelling Bee, 2nd Place</strong><span>International · 2024</span></div></li>
+        </ul>
+
+        <div class="skills reveal">
+          <p class="skills-label mono">programming</p>
+          <ul class="chips"><li>Swift / SwiftUI</li><li>Python</li><li>Java</li><li>JavaScript</li><li>HTML/CSS</li><li>SQL</li><li>Front- &amp; back-end web</li><li>UI &amp; graphic design</li></ul>
+          <p class="skills-label mono">tools</p>
+          <ul class="chips"><li>Xcode</li><li>Git/GitHub</li><li>VS Code</li><li>Fusion 360</li><li>Revit</li><li>VEX</li><li>Firebase</li></ul>
+          <p class="skills-label mono">lab</p>
+          <ul class="chips"><li>Molecular biology techniques</li><li>Lab equipment handling</li><li>Data interpretation</li></ul>
+          <p class="skills-label mono">certifications</p>
+          <ul class="chips"><li>Autodesk Certified User: Fusion 360</li><li>NASA Open Science Essentials</li><li>CPR / First Aid (BLS)</li><li>Stop the Bleed</li><li>OSHA Learn Safe</li></ul>
+          <p class="skills-label mono">languages</p>
+          <ul class="chips"><li>English</li><li>Tamil (I teach it weekly)</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. CONTACT ================= -->
+    <section id="contact" class="section contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow mono">07 / open channel</p>
+        <h2>Let's build something.</h2>
+        <p class="section-sub">The best way to reach me is email.</p>
+        <div class="email-row">
+          <a class="email" href="mailto:lakshanya.pra@gmail.com">lakshanya.pra@gmail.com</a>
+          <button class="copy" data-copy="lakshanya.pra@gmail.com" aria-label="Copy email address">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+        <div class="hero-buttons center">
+          <a class="btn" href="https://github.com/Lakshanya-P" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://youtu.be/xhVOcf4qCKo" target="_blank" rel="noopener">Clarity pitch</a>
+          <a class="btn" href="assets/docs/resume.pdf" target="_blank" rel="noopener">Résumé</a>
+          <!-- Add LinkedIn if you have one:
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn</a> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">© <span id="year"></span> Lakshanya Prabhu · built by hand, launched from McKinney, TX</p>
+    <button class="to-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3 2 5 6 5 10l-2 4H9l-2-4c0-4 2-8 5-10z"/><circle cx="12" cy="10" r="2"/><path d="M9 16l-2 4 3-1M15 16l2 4-3-1"/></svg>
+    </button>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+    <button class="lb-close" aria-label="Close">×</button>
+    <button class="lb-nav lb-prev" aria-label="Previous image">‹</button>
+    <img alt="" />
+    <button class="lb-nav lb-next" aria-label="Next image">›</button>
+    <p class="lb-caption mono"></p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
