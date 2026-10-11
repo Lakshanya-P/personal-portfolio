@@ -843,6 +843,9 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-variation-settings: "SOFT" 
 .doc-img img { transition: transform .6s var(--ease); }
 .pos-low { object-position: center 70%; }
 .card-body a.card-meta { color: var(--cyan); width: max-content; }
+.card-links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; font-weight: 700; }
+.card-meta + .card-links { margin-top: -2px; }
+.card-links a:hover { text-decoration: underline; }
 .card-body a.card-meta:hover { text-decoration: underline; }
 
 /* Leadership: each card gets its own soft color */
